@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fruver Online — Frescura que se nota</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Fruver Online: frutas y verduras frescas. Catálogo, categorías, ofertas y contacto.">
+</head>
+<body>
+  <!-- Barra superior -->
+  <nav class="topbar">
+    <div class="container nav-wrap">
+      <div class="logo">🥑 Fruver <span>Online</span></div>
+      <ul class="menu">
+        <li><a href="#categorias">Categorías</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#why">¿Por qué nosotros?</a></li>
+        <li><a href="#contacto" class="btn">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <h1>Frescura que se nota</h1>
+      <p>Frutas y verduras seleccionadas, listas para tu mesa. Calidad, sabor y precios justos.</p>
+      <a href="#productos" class="btn btn-primary">Ver catálogo</a>
+      <div class="hero-badges">
+        <span>Entrega local</span>
+        <span>Pagos seguros</span>
+        <span>Origen verificado</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Categorías -->
+  <section id="categorias" class="section">
+    <div class="container">
+      <h2 class="section-title">Categorías</h2>
+      <div class="grid grid-4">
+        <article class="card cat">
+          <div class="emoji">🍎</div>
+          <h3>Frutas</h3>
+          <p>Manzana, banano, fresa, uva, mango…</p>
+        </article>
+        <article class="card cat">
+          <div class="emoji">🥕</div>
+          <h3>Verduras</h3>
+          <p>Zanahoria, tomate, cebolla, lechuga, brócoli…</p>
+        </article>
+        <article class="card cat">
+          <div class="emoji">🌿</div>
+          <h3>Hierbas</h3>
+          <p>Cilantro, perejil, albahaca y más aromáticas.</p>
+        </article>
+        <article class="card cat">
+          <div class="emoji">🥔</div>
+          <h3>Tubérculos</h3>
+          <p>Papa criolla, pastusa, yuca, plátano, arracacha.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Productos destacados -->
+  <section id="productos" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Productos destacados</h2>
+      <div class="grid grid-3">
+        <article class="card product">
+          <div class="thumb" aria-label="Manzanas rojas"></div>
+          <div class="product-body">
+            <h3>Manzana Roja</h3>
+            <p>Dulce y crocante. Ideal para snacks y postres.</p>
+            <div class="price">$3.000/kg</div>
+            <button class="btn btn-secondary">Agregar</button>
+          </div>
+        </article>
+        <article class="card product">
+          <div class="thumb thumb-2" aria-label="Banano"></div>
+          <div class="product-body">
+            <h3>Banano</h3>
+            <p>Energía natural para tu día a día.</p>
+            <div class="price">$2.500/kg</div>
+            <button class="btn btn-secondary">Agregar</button>
+          </div>
+        </article>
+        <article class="card product">
+          <div class="thumb thumb-3" aria-label="Zanahoria"></div>
+          <div class="product-body">
+            <h3>Zanahoria</h3>
+            <p>Fuente de vitaminas A, K y antioxidantes.</p>
+            <div class="price">$1.800/kg</div>
+            <button class="btn btn-secondary">Agregar</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Tabla simple (simula tu DB) -->
+      <div class="table-wrap">
+        <h3>Inventario rápido</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Producto</th>
+              <th>Categoría</th>
+              <th>Stock</th>
+              <th>Precio (COP)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Manzana Roja</td><td>Frutas</td><td>120</td><td>3000</td></tr>
+            <tr><td>2</td><td>Banano</td><td>Frutas</td><td>200</td><td>2500</td></tr>
+            <tr><td>3</td><td>Zanahoria</td><td>Verduras</td><td>180</td><td>1800</td></tr>
+            <tr><td>4</td><td>Cilantro</td><td>Hierbas</td><td>90</td><td>1000</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why us -->
+  <section id="why" class="section">
+    <div class="container">
+      <h2 class="section-title">¿Por qué elegirnos?</h2>
+      <div class="grid grid-3">
+        <div class="card why">
+          <h3>Calidad constante</h3>
+          <p>Trabajamos con proveedores confiables y control de frescura.</p>
+        </div>
+        <div class="card why">
+          <h3>Entrega puntual</h3>
+          <p>Logística local para que recibas a tiempo, siempre.</p>
+        </div>
+        <div class="card why">
+          <h3>Atención humana</h3>
+          <p>Soporte rápido y amable. Sin robots pesados. 😉</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+      <div class="contact-grid">
+        <form class="card contact-form" onsubmit="return false;">
+          <label>Nombre<input type="text" placeholder="Tu nombre"/></label>
+          <label>Correo<input type="email" placeholder="tucorreo@ejemplo.com"/></label>
+          <label>Mensaje<textarea rows="4" placeholder="Quiero cotizar..."></textarea></label>
+          <button class="btn btn-primary">Enviar</button>
+        </form>
+        <div class="card contact-info">
+          <h3>Datos</h3>
+          <p>📍 Bogotá, Colombia</p>
+          <p>📞 302 8489992</p>
+          <p>✉️ ventas@fruveronline.com</p>
+          <p class="muted">*Demo estático para portafolio*</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© 2025 Fruver Online — Creado por Lupi</p>
+      <a href="#top" class="back">↑ Volver arriba</a>
+    </div>
+  </footer>
+</body>
+</html>
+
