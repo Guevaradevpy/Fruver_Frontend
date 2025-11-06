@@ -1,7 +1,7 @@
 # 🥑 Fruver Online — Frontend Demo
 
 Este proyecto es una **página web básica (HTML + CSS)** que simula una tienda de frutas y verduras.  
-Fue creado como parte de mi práctica de **Git, GitHub y GitHub Pages**. 🚀
+Fue creado como parte de mi práctica. 🚀
 
 
 ## 🌐 Demo en vivo
